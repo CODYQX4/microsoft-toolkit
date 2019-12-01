@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5CDB46FF-0D4A-40D2-B316-8A3C7F116285}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TAP_Installer</RootNamespace>
+    <AssemblyName>TAP Installer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenVPN-x64.cat" />
+    <None Include="Resources\OpenVPN-x64.sys" />
+    <None Include="Resources\OpenVPN-x86.cat" />
+    <None Include="Resources\OpenVPN-x86.sys" />
+    <None Include="Resources\OpenVPN.cer" />
+    <None Include="Resources\OpenVPN.cmd" />
+    <None Include="Resources\SparkLabs-x64.cat" />
+    <None Include="Resources\SparkLabs-x64.sys" />
+    <None Include="Resources\SparkLabs-x86.cat" />
+    <None Include="Resources\SparkLabs-x86.sys" />
+    <None Include="Resources\SparkLabs.cer" />
+    <None Include="Resources\SparkLabs.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenVPN-x64.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenVPN-x86.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SparkLabs-x64.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SparkLabs-x86.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TAPInstall-x64.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TAPInstall-x86.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

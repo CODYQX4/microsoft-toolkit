@@ -1,0 +1,157 @@
+[version]
+Signature   = "$Windows NT$"
+Class       = Net
+ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = %ProviderString%
+DriverVer=05/09/2016,9.0.0.21
+PnpLockDown = 1
+CatalogFile     = visctap0901.cat
+
+
+[ControlFlags]
+ExcludeFromSelect={b85b7c50-6a01-11d2-b841-00c04fad5171}\visctap0901
+
+[Manufacturer]
+%ManufacturerName% = visctap0901,NTx86.10.0,NTia64.10.0,NTamd64.10.0,NTx86.6.1,NTia64.6.1,NTamd64.6.1
+
+[visctap0901.NTx86.10.0]
+%visctap0901.DeviceDesc%    = visctap0901.ndi, visctap0901      ; Legacy
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_a ; Root enumerated 
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_b
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_c
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_d
+%visctap0901.DeviceDesc%    = visctap0901.ndi, {b85b7c50-6a01-11d2-b841-00c04fad5171}\visctap0901 ; Toaster Bus enumerated 
+
+[visctap0901.NTia64.10.0]
+%visctap0901.DeviceDesc%    = visctap0901.ndi, visctap0901      ; Legacy
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_a ; Root enumerated 
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_b
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_c
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_d
+%visctap0901.DeviceDesc%    = visctap0901.ndi, {b85b7c50-6a01-11d2-b841-00c04fad5171}\visctap0901 ; Toaster Bus enumerated 
+
+[visctap0901.NTamd64.10.0]
+%visctap0901.DeviceDesc%    = visctap0901.ndi, visctap0901      ; Legacy
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_a ; Root enumerated 
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_b
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_c
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_d
+%visctap0901.DeviceDesc%    = visctap0901.ndi, {b85b7c50-6a01-11d2-b841-00c04fad5171}\visctap0901 ; Toaster Bus enumerated 
+
+[visctap0901.NTx86.6.1]
+%visctap0901.DeviceDesc%    = visctap0901.ndi, visctap0901      ; Legacy
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_a ; Root enumerated 
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_b
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_c
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_d
+%visctap0901.DeviceDesc%    = visctap0901.ndi, {b85b7c50-6a01-11d2-b841-00c04fad5171}\visctap0901 ; Toaster Bus enumerated 
+
+[visctap0901.NTia64.6.1]
+%visctap0901.DeviceDesc%    = visctap0901.ndi, visctap0901      ; Legacy
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_a ; Root enumerated 
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_b
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_c
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_d
+%visctap0901.DeviceDesc%    = visctap0901.ndi, {b85b7c50-6a01-11d2-b841-00c04fad5171}\visctap0901 ; Toaster Bus enumerated 
+
+[visctap0901.NTamd64.6.1]
+%visctap0901.DeviceDesc%    = visctap0901.ndi, visctap0901      ; Legacy
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_a ; Root enumerated 
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_b
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_c
+%visctap0901.DeviceDesc%    = visctap0901.ndi, root\visctap0901_d
+%visctap0901.DeviceDesc%    = visctap0901.ndi, {b85b7c50-6a01-11d2-b841-00c04fad5171}\visctap0901 ; Toaster Bus enumerated 
+
+;-------------------------------------------------------------------------------
+; Microsoft Virtual Ethernet Adapter
+;
+[visctap0901.ndi]
+Characteristics    = 0x1 ; NCF_VIRTUAL
+*IfType            = 0x6 ; IF_TYPE_ETHERNET_CSMACD
+*MediaType         = 0x0 ; NdisMedium802_3
+*PhysicalMediaType = 14 ; NdisPhysicalMedium802_3
+AddReg             = visctap0901.Reg
+AddReg             = visctap0901.params.reg
+CopyFiles          = visctap0901.CopyFiles
+
+[visctap0901.ndi.Services]
+AddService         = visctap0901, 2, visctap0901.Service, visctap0901.EventLog
+
+;-----------------------------------------------------------------------------
+; Microsoft Virtual Miniport Common
+;
+[visctap0901.Reg]
+HKR,    ,                         BusNumber,           0, "0" 
+HKR, Ndi,                         Service,             0, "visctap0901"
+HKR, Ndi\Interfaces,              UpperRange,          0, "ndis5"
+HKR, Ndi\Interfaces,              LowerRange,          0, "ethernet"
+
+[visctap0901.params.reg]
+HKR, Ndi\params\MTU,                  ParamDesc, 0, "MTU"
+HKR, Ndi\params\MTU,                  Type,      0, "int"
+HKR, Ndi\params\MTU,                  Default,   0, "1500"
+HKR, Ndi\params\MTU,                  Optional,  0, "0"
+HKR, Ndi\params\MTU,                  Min,       0, "100"
+HKR, Ndi\params\MTU,                  Max,       0, "1500"
+HKR, Ndi\params\MTU,                  Step,      0, "1"
+HKR, Ndi\params\MediaStatus,          ParamDesc, 0, "Media Status"
+HKR, Ndi\params\MediaStatus,          Type,      0, "enum"
+HKR, Ndi\params\MediaStatus,          Default,   0, "0"
+HKR, Ndi\params\MediaStatus,          Optional,  0, "0"
+HKR, Ndi\params\MediaStatus\enum,     "0",       0, "Application Controlled"
+HKR, Ndi\params\MediaStatus\enum,     "1",       0, "Always Connected"
+HKR, Ndi\params\MAC,                  ParamDesc, 0, "MAC Address"
+HKR, Ndi\params\MAC,                  Type,      0, "edit"
+HKR, Ndi\params\MAC,                  Optional,  0, "1"
+HKR, Ndi\params\AllowNonAdmin,        ParamDesc, 0, "Non-Admin Access"
+HKR, Ndi\params\AllowNonAdmin,        Type,      0, "enum"
+HKR, Ndi\params\AllowNonAdmin,        Default,   0, "1"
+HKR, Ndi\params\AllowNonAdmin,        Optional,  0, "0"
+HKR, Ndi\params\AllowNonAdmin\enum,   "0",       0, "Not Allowed"
+HKR, Ndi\params\AllowNonAdmin\enum,   "1",       0, "Allowed"
+
+;-----------------------------------------------------------------------------
+; Driver and Service Section
+;
+[visctap0901.CopyFiles]
+visctap0901.sys,,,2
+
+[visctap0901.Service]
+DisplayName        = %visctap0901.Service.DispName%
+ServiceType        = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType          = 3 ;%SERVICE_DEMAND_START%
+ErrorControl       = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary      = %12%\visctap0901.sys
+AddReg             = TextModeFlags.Reg
+
+[visctap0901.EventLog]
+AddReg             = visctap0901.AddEventLog.Reg
+
+[visctap0901.AddEventLog.Reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,   0x00010001, 7
+
+[TextModeFlags.Reg]
+HKR, , TextModeFlags,    0x00010001, 0x0001
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+visctap0901.sys  = 1,,
+
+;-----------------------------------------------------------------------------
+; DestinationDirs
+;
+[DestinationDirs]
+visctap0901.CopyFiles = 12
+
+;-----------------------------------------------------------------------------
+; Localizable Strings
+;
+[Strings]
+ProviderString               = "SparkLabs VPN"
+ManufacturerName             = "SparkLabs Pty Ltd"
+visctap0901.DeviceDesc          = "Viscosity Virtual Adapter V9.1"
+visctap0901.Service.DispName    = "Viscosity Virtual Adapter V9.1"
+DiskId1                      = "Viscosity Virtual Adapter V9.1 Installation Disk"
