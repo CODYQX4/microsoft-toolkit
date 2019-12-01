@@ -1,0 +1,44 @@
+Microsoft Office 2010		: From Microsoft Office 2010 Pro Plus VL x86 Setup
+Microsoft Office 2010 CSVLK	: From Microsoft Office 2010 KMS Host License Pack
+Microsoft Office 2010 Web	: From Microsoft Office 2010 Web Apps Setup
+
+Microsoft Office 2013		: From Microsoft Office 2019 Pro Plus Retail x86 C2R Install (16.0.10730.20102)
+Microsoft Office 2013 CSVLK	: From Microsoft Office 2013 KMS Host License Pack
+Microsoft Office 2013 Web	: From Microsoft Office 2013 Web Apps Setup
+
+Microsoft Office 2016		: From Microsoft Office 2016 Pro Plus Retail x86 C2R Install (16.0.9029.2167)
+Microsoft Office 2016 CSVLK	: From Microsoft Office 2016 KMS Host License Pack
+Microsoft Office 2016 Web	: From Microsoft Office 2016 Server Setup ??????
+
+Microsoft Office 2019		: From Microsoft Office 2019 Pro Plus Retail x86 C2R Install (16.0.10730.20102)
+Microsoft Office 2019 CSVLK	: From Microsoft Office 2019 KMS Host License Pack
+
+Windows Vista			: From Windows Vista Enterprise SP2 MSDN x86 WIM
+
+Windows 7			: From Windows 7 Enterprise SP1 MSDN x86 WIM
+Windows 7 Embedded POSReady	: From Windows 7 Embedded POSReady SP1 MSDN x86 WIM
+Windows 7 Embedded Standard	: From Windows 7 Embedded Standard SP1 Evaluation IBW Runtime x86 WIM
+Windows 7 Thin PC		: From Windows 7 Thin PC SP1 MSDN x86 WIM
+
+Windows 8			: From Windows 8 Enterprise RTM MSDN x86 WIM
+Windows 8 CSVLK			: From Windows 8 Enterprise RTM MSDN x86 WIM
+Windows 8 Embedded Industry	: From Windows 8 Embedded Industry RTM MSDN x86 WIM
+Windows 8 Embedded Standard	: From Windows 8 Embedded Standard RTM MSDN IBW Runtime x86 WIM
+
+Windows 8.1			: From Windows 8.1 Enterprise RTM With Update MSDN x86 WIM
+Windows 8.1 CSVLK		: From Windows 8.1 Enterprise RTM With Update MSDN x86 WIM
+
+Windows 10 TH1			: From Windows 10 Enterprise Build 10240 MSDN x86 WIM
+Windows 10 TH1 CSVLK		: From Windows 10 Enterprise Build 10240 MSDN x86 WIM
+Windows 10 TH2			: From Windows 10 Enterprise Build 10586 MSDN x86 WIM
+Windows 10 TH2 CSVLK		: From Windows 10 Enterprise Build 10586 MSDN x86 WIM
+Windows 10 RS1			: From Windows 10 Enterprise Build 14393 MSDN x86 WIM
+Windows 10 RS1 CSVLK		: From Windows 10 Enterprise Build 14393 MSDN x86 WIM
+Windows 10 RS2			: From Windows 10 Enterprise Build 15063 MSDN x86 WIM
+Windows 10 RS2 CSVLK		: From Windows 10 Enterprise Build 15063 MSDN x86 WIM
+Windows 10 RS3			: From Windows 10 Enterprise Build 16299 MSDN x86 WIM
+Windows 10 RS3 CSVLK		: From Windows 10 Enterprise Build 16299 MSDN x86 WIM
+Windows 10 RS4			: From Windows 10 Enterprise Build 17134 MSDN x86 WIM
+Windows 10 RS4 CSVLK		: From Windows 10 Enterprise Build 17134 MSDN x86 WIM
+Windows 10 RS5			: From Windows 10 Enterprise Build 17763 MSDN x86 WIM
+Windows 10 RS5 CSVLK		: From Windows 10 Enterprise Build 17763 MSDN x86 WIM
