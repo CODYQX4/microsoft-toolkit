@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AutoKMS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AutoKMSPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%WINDIR%\AutoKMS</Value>
+    </Setting>
+    <Setting Name="AutoRearmPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%WINDIR%\AutoRearm</Value>
+    </Setting>
+    <Setting Name="KMSServerServicePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%WINDIR%\KMSServerService</Value>
+    </Setting>
+    <Setting Name="KMSPIDOffice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ReuseKMSPID</Value>
+    </Setting>
+    <Setting Name="KMSPIDWindows" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ReuseKMSPID</Value>
+    </Setting>
+    <Setting Name="KMSPortOffice" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1688</Value>
+    </Setting>
+    <Setting Name="KMSPortWindows" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1688</Value>
+    </Setting>
+    <Setting Name="KMSServerOffice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.2</Value>
+    </Setting>
+    <Setting Name="KMSServerWindows" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.2</Value>
+    </Setting>
+    <Setting Name="RemoveKMSConnection" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UseKMSEmulator" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowCMID" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowUnlicensed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="KillProcessOnPort" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LicenseBackupsPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\Backups</Value>
+    </Setting>
+    <Setting Name="LocalHostBypassIPAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10.3.0.1</Value>
+    </Setting>
+    <Setting Name="LocalHostBypassIPSubnet" Type="System.String" Scope="User">
+      <Value Profile="(Default)">255.255.255.0</Value>
+    </Setting>
+    <Setting Name="LocalHostBypassUseTAPAdapter" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LocalHostBypassUseWinDivertClient" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LocalHostBypassUseDLLInjection" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="KMSHardwareID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">364F463A8863D35F</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
