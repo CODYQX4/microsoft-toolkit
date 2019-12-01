@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSEmulator.NET", "KMSEmulator.NET\KMSEmulator.NET.csproj", "{D027504A-1634-46CE-BE98-BB3325F14720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSEmulator", "KMSEmulator\KMSEmulator.csproj", "{B50F7908-9CF4-47CA-8D27-AAB960DAF5F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D027504A-1634-46CE-BE98-BB3325F14720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D027504A-1634-46CE-BE98-BB3325F14720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D027504A-1634-46CE-BE98-BB3325F14720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D027504A-1634-46CE-BE98-BB3325F14720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50F7908-9CF4-47CA-8D27-AAB960DAF5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50F7908-9CF4-47CA-8D27-AAB960DAF5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50F7908-9CF4-47CA-8D27-AAB960DAF5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50F7908-9CF4-47CA-8D27-AAB960DAF5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
